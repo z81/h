@@ -1,10 +1,10 @@
 name:                hdd
 version:             0.1.0.0
-github:              "githubuser/hdd"
+github:              "z81/h"
 license:             BSD3
-author:              "Author name here"
+author:              "Author z81"
 maintainer:          "example@example.com"
-copyright:           "2019 Author name here"
+copyright:           "2019 Author z81"
 
 extra-source-files:
 - README.md
@@ -17,10 +17,20 @@ extra-source-files:
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/githubuser/hdd#readme>
+description:         Please see the README on GitHub at <https://github.com/z81/hdd#readme>
 
 dependencies:
 - base >= 4.7 && < 5
+- warp
+- network
+- http-types
+- wai
+- blaze-builder
+- utf8-string
+- bytestring
+- envy
+- text
+- process
 
 library:
   source-dirs: src
@@ -45,4 +55,4 @@ tests:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - hdd
+    - hddz
